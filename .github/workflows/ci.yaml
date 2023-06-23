@@ -16,5 +16,5 @@ jobs:
           sudo apt install wget -y
           wget smartpy.io/smartpy
           chmod a+x smartpy
-          mv smartpy /usr/bin/ 
+          sudo mv smartpy /usr/bin/ 
 
