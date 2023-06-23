@@ -12,8 +12,8 @@ jobs:
 
       - name: Run a one-line script
         run: |
-          apt update
-          apt install wget -y
+          sudo apt update
+          sudo apt install wget -y
           wget smartpy.io/smartpy
           chmod a+x smartpy 
 
