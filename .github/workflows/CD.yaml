@@ -19,12 +19,9 @@ jobs:
           bash install.sh --yes
 
 
-      # - name: Compile contract
-      #   run: |
-      #     wget https://legacy.smartpy.io/smartpy
-      #     chmod a+x smartpy
-      #     mkdir -p out
-      #     ./smartpy compile contract.py ./out/
+      - name: Compile contract
+        run: |
+          ~/smartpy-cli/SmartPy.sh compile contract.py ./out/
 
       # - name: Deploy contract
       #   run: |
