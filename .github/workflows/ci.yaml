@@ -9,7 +9,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
+      - uses: docker-practice/actions-setup-docker@master
+        timeout-minutes: 12
       - name: Run a one-line script
         run: |
           sudo apt update
@@ -17,4 +18,9 @@ jobs:
           wget smartpy.io/smartpy
           chmod a+x smartpy
           sudo mv smartpy /usr/bin/ 
+
+      - name: Build file
+        run: smartpy compile contract.py
+
+
 
