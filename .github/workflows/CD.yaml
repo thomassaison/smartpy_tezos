@@ -27,5 +27,3 @@ jobs:
       #     mv tezos-client $HOME/.local/bin
       #     echo 'export PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc
       #     source $HOME/.bashrc
-
-$
