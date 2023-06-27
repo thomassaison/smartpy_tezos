@@ -27,3 +27,7 @@ jobs:
           mv octez-client $HOME/.local/bin
           echo 'export PATH="$HOME/.local/bin:$PATH"' >> $HOME/.bashrc
           source $HOME/.bashrc
+
+      - name: Originate contract
+        run: |
+          echo "Originating"
